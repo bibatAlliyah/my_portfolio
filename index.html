@@ -1,167 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
- 
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alliyah Bibat — Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
                 
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-           
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#awards">Awards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Contacts</a>
-              </li>
-            </ul>
- 
-          </div>
-        </div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-brand">Alliyah Myka G. Bibat</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
  
-    <section id="home">
-        <p class="questrial-regular name">ALLIYAH MYKA<br>BIBAT</p>
-        <p class="questrial-regular stud">CS STUDENT AT NU-LAGUNA</p>
-        <button class="questrial-regular button" onclick="window.location.href='#about'">ABOUT ME</button>
-    </section>
-
-    <section id="about">
-      <h1 class="questrial-regular abt">ABOUT ME</h1>
-      <img src="images/about.png" alt="" class="pic">
-      <div id="introduction">
-        <p class="questrial-regular fname">&nbsp;&nbsp;&nbsp;&nbsp;ALLIYAH MYKA BIBAT</p>
-        <p class="be-vietnam-pro-regular intro">
-            I am a 20 year old CS Student currently 
-            studying at NU-Laguna with a growing focus 
-            on cybersecurity. I approach tech with a
-            straightforward mindset: solve the problem,
-            understand the why, and improve what’s
-            there. I'm currently building my skills
-            through hands-on projects and actively
-            working toward a career in cybersecurity.
+    <section id="home" class="section hero">
+      <div class="hero-inner">
+        <p class="mono prompt">guest@portfolio:~$ whoami</p>
+        <h1 class="hero-name">Alliyah Myka G. Bibat</h1>
+        <p class="hero-role">
+          <span id="typedRole" class="typed"></span><span class="cursor">|</span>
         </p>
+        <p class="hero-sub">4th Year Computer Science Student, NU-Laguna</p>
+        <a href="#about" class="btn-primary">See more</a>
       </div>
     </section>
 
-    <section id="education">
-      <h1 class="questrial-regular edu">EDUCATION</h1>
-      <div id="eduLine">
-        <div class="cgla">
-          <a href="https://www.facebook.com/childrenofgodlearningacademy/" target="_blank" class="links">
-              <img src="images/cgla.png" alt="CGLA icon" class="elem">
-              <p class="questrial-regular school">CHILDREN OF GOD - LEARNING<br> CENTER</p>
-              <p class=" questrial-regular year">PREP - GRADE 4<br>2010-2015</p>
-          </a>
-        </div>
-      
-        <div class="nul">
-          <a href="https://www.national-u.edu.ph/nu-laguna/" target="_blank" class="links">
-              <img src="images/nu.png" alt="NU icon" class="college">
-              <p class="questrial-regular school">NU - LAGUNA</p>
-              <p class=" questrial-regular year">BS COMPUTER SCIENCE<br>2023-PRESENT</p>
-          </a>
-        </div>
-
-        <div class="cic">
-          <a href="https://www.facebook.com/CI.Canlubang.official/" target="_blank" class="links">
-              <img src="images/cic.png" alt="CIC icon" class="shs">
-              <p class="questrial-regular school">CALAMBA INSTITUTE - <br>CANLUBANG</p>
-              <p class=" questrial-regular year">GRADE 5 - GRADE12<br>2015-20123</p>
-          </a>
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="tag mono">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <img src="images/about.png" alt="pic of Alliyah" class="about-photo">
+        <div class="about-text">
+          <p>
+            I'm a 21 year old Computer Science student at NU-Laguna with a background in
+            web and software development, currently building hands-on cybersecurity skills
+            through CTF challenges and security labs. I approach tech with a straightforward
+            mindset: solve the problem, understand the why, and improve what's there.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h1 class="questrial-regular skills">SKILLS</h1>
-      <div id="row1">
-        <img src="images/java.png" alt="Java icon" class="java">
-        <img src="images/c++.png" alt="C++ icon" class="cplus">
-        <img src="images/csharp.png" alt="C# icon" class="csharp">
+    <section id="education" class="section">
+      <div class="section-head">
+        <span class="tag mono">02</span>
+        <h2>Education</h2>
       </div>
-
-      <div id="row2">
-        <img src="images/html.png" alt="HTML icon" class="html">
-        <img src="images/css.png" alt="CSS icon" class="css">
-        <img src="images/sql.png" alt="MySQL icon" class="sql">
-      </div>
-    </section>
-
-    <section id="awards">
-      <h1 class="questrial-regular title">ACHIEVEMENTS AND AWARDS</h1>
-      <div class="proj">
-        <div id="game">
-          <a href="BibatMadriagaRodaSayre_DailyRush.html" target="_blank" class="links">
-            <img src="images/daily rush.png" alt="Daily Rush icon" class="rush">
-            <p class="questrial-regular info">Daily Rush<br>&nbsp;&nbsp;Lead Programmer</p>
-          </a>
-        </div>
-      
-        <div id="app">
-          <img src="images/app.png" alt="App icon" class="app">
-          <p class="questrial-regular info">Student Companion<br>App<br>&nbsp;&nbsp;Developer</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacts">
-      <h1 class="questrial-regular contact">CONTACTS</h1>
-      <h1 class="questrial-regular touch">GET IN TOUCH</h1>
-      <div id="reach">
-        <div class="fbm">
-          <a href="https://www.facebook.com/iyamyka/" target="_blank" class="links">
-            <img src="images/msg.png" alt="Messenger icon" class="msg">
-            <p class="questrial-regular fb">Facebook/Messenger<br>Alliyah Myka Bibat</p>
-          </a>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <a href="https://www.facebook.com/childrenofgodlearningacademy/" target="_blank" class="timeline-link">
+              <img src="images/cgla.png" alt="CGLA logo" class="timeline-logo">
+              <div>
+                <p class="timeline-school">Children of God — Learning Academy</p>
+                <p class="timeline-detail">Prep – Grade 4</p>
+                <p class="mono timeline-date">2010 – 2015</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="emad">
-          <a href="mailto:mykabibat@gmail.com" target="_blank" class="links">
-            <img src="images/email.png" alt="Email icon" class="email">
-            <p class="questrial-regular address">Email Address<br>mykabibat@gmail.com</p>
-          </a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <a href="https://www.facebook.com/CI.Canlubang.official/" target="_blank" class="timeline-link">
+              <img src="images/cic.png" alt="CIC logo" class="timeline-logo">
+              <div>
+                <p class="timeline-school">Calamba Institute — Canlubang</p>
+                <p class="timeline-detail">Grade 5 – Grade 12, STEM with Honors</p>
+                <p class="mono timeline-date">2015 – 2023</p>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="telnum">
-          <a href="tel:+699555280914" target="_blank" class="links">
-            <img src="images/phone.png" alt="Phone icon" class="phone">
-            <p class="questrial-regular num">Phone Number<br>+699555280914</p>
-          </a>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <a href="https://www.national-u.edu.ph/nu-laguna/" target="_blank" class="timeline-link">
+              <img src="images/nu.png" alt="NU Laguna logo" class="timeline-logo">
+              <div>
+                <p class="timeline-school">NU Laguna</p>
+                <p class="timeline-detail">BS Computer Science</p>
+                <p class="mono timeline-date">2023 – Expected 2027</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
- 
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="tag mono">03</span>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-icons">
+        <img src="images/java.png" alt="Java" class="skill-icon">
+        <img src="images/c++.png" alt="C++" class="skill-icon">
+        <img src="images/csharp.png" alt="C#" class="skill-icon">
+        <img src="images/html.png" alt="HTML" class="skill-icon">
+        <img src="images/css.png" alt="CSS" class="skill-icon">
+        <img src="images/sql.png" alt="MySQL" class="skill-icon">
+      </div>
+
+      <div class="skills-tags-wrap">
+        <div class="skills-tag-group">
+          <p class="mono skills-label">Web Development</p>
+          <div class="tags">
+            <span class="tag-pill">HTML</span>
+            <span class="tag-pill">CSS</span>
+            <span class="tag-pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-tag-group">
+          <p class="mono skills-label">Office Tools</p>
+          <div class="tags">
+            <span class="tag-pill">Excel</span>
+            <span class="tag-pill">Word</span>
+            <span class="tag-pill">PowerPoint</span>
+          </div>
+        </div>
+        <div class="skills-tag-group">
+          <p class="mono skills-label">Working Style</p>
+          <div class="tags">
+            <span class="tag-pill">Team-oriented</span>
+            <span class="tag-pill">Detail-focused</span>
+            <span class="tag-pill">Self-motivated</span>
+            <span class="tag-pill">Reliable</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="section-head">
+        <span class="tag mono">04</span>
+        <h2>Achievements</h2>
+      </div>
+
+      <div class="stats-strip">
+        <div class="stat">
+          <p class="stat-num mono" data-target="2">0</p>
+          <p class="stat-label">Projects Built</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num mono" data-target="3">0</p>
+          <p class="stat-label">Certificates Earned</p>
+        </div>
+        <div class="stat">
+          <p class="stat-num mono" data-target="1">0</p>
+          <p class="stat-label">CTF Competition</p>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Milestones</h3>
+      <div class="cards-grid">
+        <div class="card">
+          <a href="DailyRush.html" target="_blank" class="card-link">
+            <img src="images/daily rush.png" alt="Daily Rush icon" class="card-img">
+            <p class="card-title">Daily Rush</p>
+            <p class="card-role">Lead Developer, piNUyatan Studios</p>
+            <p class="mono card-date">Sept 2024 – March 2025</p>
+            <p class="card-desc">A high-complexity game built in Scratch by a student team. Eligible for copyright.</p>
+          </a>
+        </div>
+        <div class="card">
+          <img src="images/app.png" alt="Student Companion App icon" class="card-img">
+          <p class="card-title">Student Companion App</p>
+          <p class="card-role">Developer — Fitness Module</p>
+          <p class="mono card-date">Jan 2025 – March 2025</p>
+          <p class="card-desc">Android app built with Java and SQLite that tracks savings, expenses, to-dos, and fitness.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Certificates &amp; Competitions</h3>
+      <div class="cards-grid certs-grid">
+        <div class="card cert-card">
+          <p class="card-title">SysOut 2023: Building Tomorrow, Today</p>
+          <p class="card-role">Seminar</p>
+          <p class="mono card-date">October 2023 · NU Laguna</p>
+        </div>
+        <div class="card cert-card">
+          <p class="card-title">Web Exploitation — Day 1</p>
+          <p class="card-role">Seminar</p>
+          <p class="mono card-date">November 20, 2024 · NU Laguna</p>
+        </div>
+        <div class="card cert-card highlight">
+          <p class="card-title">HackForGov 2025</p>
+          <p class="card-role">Capture-The-Flag Competition, CALABARZON</p>
+          <p class="mono card-date">October 6, 2025 · Batangas</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <span class="tag mono">05</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="contact-intro">Get in touch</p>
+
+      <div class="contact-grid">
+        <a href="https://www.facebook.com/iyamyka/" target="_blank" class="contact-card">
+          <img src="images/msg.png" alt="Messenger icon" class="contact-icon">
+          <p class="contact-label">Facebook / Messenger</p>
+          <p class="contact-value">Alliyah Myka Bibat</p>
+        </a>
+        <a href="mailto:mykabibat@gmail.com" class="contact-card">
+          <img src="images/email.png" alt="Email icon" class="contact-icon">
+          <p class="contact-label">Email</p>
+          <p class="contact-value">mykabibat@gmail.com</p>
+        </a>
+        <a href="tel:+699555280914" class="contact-card">
+          <img src="images/phone.png" alt="Phone icon" class="contact-icon">
+          <p class="contact-label">Phone</p>
+          <p class="contact-value">+699 555 280 914</p>
+        </a>
+      </div>
+
+      <p class="references-note">References available upon request.</p>
+    </section>
+
+    <footer class="footer">
+        <p class="mono">© 2026 Alliyah Bibat</p>
+    </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
