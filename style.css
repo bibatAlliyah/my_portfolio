@@ -1,0 +1,377 @@
+body {
+    height: 100vh;
+}
+
+#home{
+    background-image: url("images/home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#about{
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#education{
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#skills{
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#awards{
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contacts{
+    background-image: url("images/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.name{
+    font-size: 70px;
+    margin-top: 9%;
+    margin-left: 20%;
+    margin-right: 40%;
+    line-height: normal;
+}
+
+.stud{
+    font-size: 25px;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 45%;
+}
+
+.button{
+    border: none;
+    font-size: 15px;
+    width: 25vh;
+    height: 10vh;
+    margin-top: 1%;
+    margin-left: 33%;
+    margin-right: 50%;
+}
+
+.abt{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 75%;
+}
+
+.pic{
+    width: 70vh;
+    height: 70vh;
+    margin-left: 5%;
+    margin-right: 20vh;
+    border-radius: 5%;
+    border: 3px solid #371704;
+}
+
+#introduction{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100vh;
+}
+
+#introduction .fname{
+    font-size: 40px;
+    margin-top: 5%;
+    text-align: left;
+    color: #371704;
+}
+
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#introduction .intro{
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-right: 20%;
+    text-align: justify;
+    font-size: 20px;
+    color: #371704;
+}
+
+.edu{
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 70%;
+}
+
+#eduLine{
+    display: inline-flex;
+    margin-top: 6%;
+    margin-left: 13%;
+}
+
+.school{
+    font-weight: bolder;
+    text-decoration: none;
+    color: inherit;
+}
+
+.year{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cgla{
+    margin-right: 25%;
+    border-radius: 20%;
+}
+
+.elem{
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+.nul{
+    margin-right: 25%;
+    border-radius: 20%;
+}
+
+.college{
+    width: 30vh;
+    height: 35vh;
+    margin-bottom: 5%;
+}
+
+.cic{
+    border-radius: 20%;
+}
+
+.shs{
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+.skills{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 930px;
+    margin-bottom: 10px;
+}
+
+#row1{
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+#row1 .java{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    margin-right: 30vh;
+    border: 1vh solid #371704;
+}
+
+#row1 .cplus{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    margin-right: 30vh;
+    border: 1vh solid #371704;
+}
+
+#row1 .csharp{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    border: 1vh solid #371704;
+}
+
+#row2{
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+#row2 .html{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    margin-right: 30vh;
+    border: 1vh solid #371704;
+}
+
+#row2 .css{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    margin-right: 30vh;
+    border: 1vh solid #371704;
+}
+
+#row2 .sql{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 25%;
+    border: 1vh solid #371704;
+}
+
+.title{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 45%;
+    margin-bottom: 10px;
+}
+
+.proj{
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    margin-left: 35vh;
+    margin-top: 10vh;
+    margin-right: 10vh;
+}
+
+#game{
+    padding-bottom: 5%;
+    margin-right: 10vh;
+    border-radius: 20%;
+}
+
+.rush{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 20%;
+}
+
+#app{
+    vertical-align: top;
+    margin-left: 30vh;
+    border-radius: 20%;
+}
+
+.app{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 20%;
+}
+
+.info{
+    align-items: center;
+}
+
+.contact{
+    margin-top: 3%;
+}
+
+.touch {
+    margin-top: 5%;
+}
+
+#reach{
+    display: inline-flex;
+}
+
+.fbm{
+    margin-top: 3%;
+    margin-left: 25vh;
+    margin-right: 20vh;
+    border-radius: 25%;
+}
+
+.msg{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 25%;
+}
+
+.fb{
+    font-weight: 900;
+}
+
+.emad{
+    margin-top: 3%;
+    margin-right: 20vh;
+    border-radius: 25%;
+}
+
+.email{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 25%;
+}
+
+.address{
+    font-weight: 900;
+}
+
+.telnum{
+    margin-top: 3%;
+    border-radius: 25%;
+}
+
+.phone{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 25%;
+}
+
+.num{
+    font-weight: 900;
+}
+
+.links{
+    text-decoration:none; 
+    color:inherit;
+}
+
+section{
+    border: 1px solid transparent;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link, .navbar-brand{
+    color: white;
+}
+
+h1{
+    margin-top: 3%;
+}
