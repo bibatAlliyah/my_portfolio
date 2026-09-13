@@ -6,24 +6,6 @@ navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-//prevents bots scrapers from reading my info directly
-const emailParts = ["mykabibat", "@", "gmail", ".", "com"];
-const emailAddress = emailParts.join("");
-
-const emailCard = document.getElementById("emailCard");
-const emailValue = document.getElementById("emailValue");
-emailCard.href = "mailto:" + emailAddress;
-emailValue.textContent = emailAddress;
-
-const phoneParts = ["+699", "555", "280914"];
-const phoneDigitsOnly = phoneParts.join("");
-const phoneDisplay = phoneParts.join(" ");
-
-const phoneCard = document.getElementById("phoneCard");
-const phoneValue = document.getElementById("phoneValue");
-phoneCard.href = "tel:" + phoneDigitsOnly;
-phoneValue.textContent = phoneDisplay;
-
 //close mobile menu
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
