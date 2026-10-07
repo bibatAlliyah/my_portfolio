@@ -120,3 +120,39 @@ const statsObserver = new IntersectionObserver(
 
 const statsStrip = document.querySelector(".stats-strip");
 if (statsStrip) statsObserver.observe(statsStrip);
+
+//cert popups
+const certModal = document.getElementById("certModal");
+const modalContent = document.getElementById("modalContent");
+const modalClose = document.getElementById("modalClose");
+
+document.querySelectorAll(".cert-trigger").forEach((trigger) => {
+  trigger.addEventListener("click", (e) => {
+    e.preventDefault();
+    const fileUrl = trigger.getAttribute("data-file");
+    const fileType = trigger.getAttribute("data-type");
+
+    if (fileType === "pdf") {
+      modalContent.innerHTML = `<iframe src="${fileUrl}" class="modal-pdf"></iframe>`;
+    } else {
+      modalContent.innerHTML = `<img src="${fileUrl}" alt="Certificate" class="modal-img">`;
+    }
+
+    certModal.classList.add("open");
+  });
+});
+
+function closeModal() {
+  certModal.classList.remove("open");
+  modalContent.innerHTML = "";
+}
+
+modalClose.addEventListener("click", closeModal);
+
+certModal.addEventListener("click", (e) => {
+  if (e.target === certModal) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});

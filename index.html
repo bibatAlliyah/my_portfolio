@@ -173,20 +173,24 @@
         <h2>Achievements</h2>
       </div>
 
-      <div class="stats-strip">
-        <div class="stat">
-          <p class="stat-num mono" data-target="3">0</p>
-          <p class="stat-label">Projects Built</p>
+        <div class="stats-strip">
+          <div class="stat">
+            <p class="stat-num mono" data-target="2">0</p>
+            <p class="stat-label">Projects Built</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num mono" data-target="7">0</p>
+            <p class="stat-label">Certifications Earned</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num mono" data-target="1">0</p>
+            <p class="stat-label">CTF Competition</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num mono" data-target="1">0</p>
+            <p class="stat-label">Career Badge</p>
+          </div>
         </div>
-        <div class="stat">
-          <p class="stat-num mono" data-target="3">0</p>
-          <p class="stat-label">Certificates Earned</p>
-        </div>
-        <div class="stat">
-          <p class="stat-num mono" data-target="1">0</p>
-          <p class="stat-label">CTF Competition</p>
-        </div>
-      </div>
 
       <h3 class="sub-heading">Milestones</h3>
       <div class="cards-grid">
@@ -237,6 +241,77 @@
           <p class="mono card-date">October 6, 2025 · Batangas</p>
         </div>
       </div>
+
+      <h3 class="sub-heading">Online Certifications</h3>
+        <div class="cards-grid certs-grid">
+          <div class="card cert-card highlight">
+            <p class="card-title">Accenture Google Career Certificate Badge</p>
+            <p class="card-role">AI Essentials Learning Path</p>
+            <p class="mono card-date">Earned October 3, 2026</p>
+            <p class="card-desc">Awarded after completing a 6-course path on AI fundamentals and responsible use.</p>
+            <details class="course-list">
+              <summary>View the 6 courses included</summary>
+              <ul>
+                <li>
+                  <a href="certs/AIFundamentals.pdf" class="cert-trigger" data-file="certs/AIFundamentals.pdf" data-type="pdf">
+                    AI Fundamentals
+                  </a>
+                </li>
+                <li>
+                  <a href="certs/IntroToAI.pdf" class="cert-trigger" data-file="certs/IntroToAI.pdf" data-type="pdf">
+                    Introduction to AI
+                  </a>
+                </li>
+                <li>
+                  <a href="certs/AIBrainstorm.pdf" class="cert-trigger" data-file="certs/AIBrainstorm.pdf" data-type="pdf">
+                    AI for Brainstorming and Planning
+                  </a>
+                </li>
+                <li>
+                  <a href="certs/AITools.pdf" class="cert-trigger" data-file="certs/AITools.pdf" data-type="pdf">
+                    Maximize Productivity With AI Tools
+                  </a>
+                </li>
+                <li>
+                  <a href="certs/AIInsights.pdf" class="cert-trigger" data-file="certs/AIInsights.pdf" data-type="pdf">
+                    AI for Research and Insights
+                  </a>
+                </li>
+                <li>
+                  <a href="certs/ResponsibleAI.pdf" class="cert-trigger" data-file="certs/ResponsibleAI.pdf" data-type="pdf">
+                    Use AI Responsibly
+                  </a>
+                </li>
+              </ul>
+            </details>
+            <a href="https://coursera.org/share/163173236cc5b36e9dffedb83c636659" target="_blank" class="card-verify-link">View badge credential →</a>
+          </div>
+
+          <div class="card cert-card">
+            <p class="card-title">Google Cybersecurity Certificate</p>
+            <p class="card-role">In progress</p>
+            <ul class="progress-list">
+              <li>
+                <span class="status-dot done"></span>
+                  <a href="certs/FoundationsOfCybersecurity.pdf" class="cert-trigger" data-file="certs/FoundationsOfCybersecurity.pdf" data-type="pdf">
+                    Foundations of Cybersecurity
+                  </a>
+                <span class="mono progress-date">completed Oct 2, 2026</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="sub-heading">Work Immersion</h3>
+        <div class="cards-grid certs-grid">
+          <div class="card cert-card cert-trigger" data-file="certs/Work Immersion - OSHA.png" data-type="image">
+            <p class="card-title">10-Day Work Immersion</p>
+            <p class="card-role">Torres Technology Center Corporation</p>
+            <p class="mono card-date">Certificate of Completion · February 17, 2023</p>
+            <p class="card-desc">Completed a 10-day Work Immersion Program, including Occupational Safety and Health (OSHA) Orientation, as part of Senior High School requirements.</p>
+          </div>
+        </div>
+
     </section>
 
     <section id="contact" class="section">
@@ -271,6 +346,13 @@
         <p class="mono">© 2026 Alliyah Bibat</p>
     </footer>
 
+
+  <div class="modal-overlay" id="certModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
   <script src="script.js"></script>
 
 </body>
