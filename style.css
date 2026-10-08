@@ -400,7 +400,7 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 0 20px rgba(157, 78, 221, 0.2);
 }
 
-/* ===== Expandable course list ===== */
+/* expandable cert list */
 .course-list {
   margin-top: 12px;
   font-size: 13px;
@@ -444,7 +444,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--glow);
 }
 
-/* ===== In-progress certification list ===== */
+/* cert list */
 .progress-list {
   list-style: none;
   padding: 0;
@@ -679,4 +679,14 @@ button.cert-trigger:hover {
 .card.cert-trigger:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
+}
+
+.label-pill {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--glow);
+  border: 1px solid var(--accent-deep);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 12px;
 }
