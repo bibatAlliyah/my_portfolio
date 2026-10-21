@@ -690,3 +690,40 @@ button.cert-trigger:hover {
   padding: 3px 10px;
   margin-bottom: 12px;
 }
+
+/* ===== proj list inside react proj card ===== */
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.project-list li {
+  padding: 12px 0;
+  border-top: 1px solid var(--panel-border);
+  font-size: 14px;
+}
+
+.project-list a {
+  color: var(--glow);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-list a:hover {
+  color: var(--text);
+}
+
+.project-desc {
+  display: block;
+  color: var(--text-dim);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.project-tech {
+  display: block;
+  color: var(--accent);
+  font-size: 11px;
+  margin-top: 4px;
+}
