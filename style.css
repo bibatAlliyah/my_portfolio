@@ -727,3 +727,20 @@ button.cert-trigger:hover {
   font-size: 11px;
   margin-top: 4px;
 }
+
+.course-list a.cert-trigger {
+  display: inline;
+  margin-top: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  color: var(--text-dim);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 13px;
+}
+
+.course-list a.cert-trigger:hover {
+  background: none;
+  color: var(--glow);
+}
